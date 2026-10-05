@@ -16,9 +16,13 @@ class MainActivity:AppCompatActivity(){
   super.onCreate(b);setContentView(R.layout.activity_main)
   val contacts=findViewById<Switch>(R.id.contacts);val keys=findViewById<Switch>(R.id.keywordsSwitch)
   status=findViewById(R.id.status)
-  contacts.isChecked=Prefs.contactAlerts(this);keys.isChecked=Prefs.keywords(this).isNotEmpty()
+  contacts.isChecked=Prefs.contactAlerts(this)
+  keys.isChecked=Prefs.p(this).getBoolean("keywords_enabled",true)
   contacts.setOnCheckedChangeListener{_,v->Prefs.p(this).edit().putBoolean("contact_alerts",v).apply()}
-  keys.setOnClickListener{startActivity(Intent(this,KeywordsActivity::class.java))}
+  keys.setOnCheckedChangeListener{_,v->Prefs.p(this).edit().putBoolean("keywords_enabled",v).apply()}
+  findViewById<Button>(R.id.manageKeywordsButton).setOnClickListener{
+   startActivity(Intent(this,KeywordsActivity::class.java))
+  }
   findViewById<ImageButton>(R.id.settingsButton).setOnClickListener{startActivity(Intent(this,AlertSettingsActivity::class.java))}
   findViewById<Button>(R.id.permissionButton).setOnClickListener{requestPermissions()}
   findViewById<Button>(R.id.testButton).setOnClickListener{AlertHelper.show(this,"تست SMS Alert","این اعلان باید با صدای انتخابی و ویبره اجرا شود.","TEST")}

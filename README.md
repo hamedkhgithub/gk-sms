@@ -1,6 +1,8 @@
-# SMS Alert v6
-Redesigned three-screen Persian RTL Android UI based on the approved mockup:
-Dashboard, Alert Settings, Keywords. App name is SMS Alert with a new adaptive-style SMS/bell icon.
-Core v5 logic remains: saved contacts or enabled keyword matches create an independent alert;
-persistent ringtone selection, vibration, repeat alerts, permissions, and notification-channel controls.
-Java/Kotlin target: 17.
+# SMS Alert v7
+
+Changes from v6:
+- Added an explicit "مدیریت کلمات کلیدی" button on Dashboard.
+- Keyword enable/disable switch is now independent from navigation.
+- Removed the purple system status bar by explicitly matching it to the light app background.
+- Dark status-bar icons retained for readability.
+- Existing SMS/contact/keyword/ringtone/vibration/repeat logic preserved.
