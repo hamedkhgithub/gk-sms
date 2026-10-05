@@ -1,8 +1,6 @@
-# SMS Alert v7
-
-Changes from v6:
-- Added an explicit "مدیریت کلمات کلیدی" button on Dashboard.
-- Keyword enable/disable switch is now independent from navigation.
-- Removed the purple system status bar by explicitly matching it to the light app background.
-- Dark status-bar icons retained for readability.
-- Existing SMS/contact/keyword/ringtone/vibration/repeat logic preserved.
+# SMS Alert v8
+Fixes v7 build failure:
+- `manageKeywordsButton` now actually exists in `activity_main.xml`.
+- XML was parsed/validated before packaging.
+- Kotlin/XML ID references were cross-checked.
+- v7 status-bar and keyword-navigation changes are preserved.

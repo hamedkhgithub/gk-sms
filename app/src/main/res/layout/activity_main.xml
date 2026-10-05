@@ -12,6 +12,13 @@
 هشدار برای پیامک شماره‌های موجود در مخاطبین" android:textColor="@color/text"/>
    <Switch android:id="@+id/keywordsSwitch" android:layout_width="match_parent" android:layout_height="64dp" android:text="کلمات کلیدی
 هشدار برای پیامک‌های حاوی کلمات مشخص" android:textColor="@color/text"/>
+   <Button
+    android:id="@+id/manageKeywordsButton"
+    android:layout_width="match_parent"
+    android:layout_height="52dp"
+    android:layout_marginTop="6dp"
+    android:text="مدیریت کلمات کلیدی  ←"/>
+
   </LinearLayout>
   <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="وضعیت دسترسی‌ها" android:textColor="@color/text" android:textSize="18sp" android:textStyle="bold" android:gravity="right"/>
   <TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:background="@drawable/card_white" android:padding="18dp" android:textColor="@color/text" android:textSize="15sp" android:lineSpacingExtra="10dp"/>
