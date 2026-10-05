@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+ android:layout_width="match_parent" android:layout_height="match_parent">
+<LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+ android:orientation="vertical" android:padding="22dp" android:layoutDirection="rtl">
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+ android:text="هشدار پیامک جنیوس کالا" android:textSize="26sp" android:textStyle="bold" android:gravity="center"/>
+<Switch android:id="@+id/enabled" android:layout_width="match_parent" android:layout_height="wrap_content"
+ android:text="هشدار اختصاصی فعال باشد" android:layout_marginTop="22dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content"
+ android:text="کلمات کلیدی — هر کلمه/عبارت در یک خط" android:layout_marginTop="18dp"/>
+<EditText android:id="@+id/keywords" android:layout_width="match_parent" android:layout_height="120dp"
+ android:gravity="top" android:inputType="textMultiLine" android:hint="جنیوس کالا&#10;GeniusKala&#10;سفارش شما"/>
+<Switch android:id="@+id/vibration" android:layout_width="match_parent" android:layout_height="wrap_content"
+ android:text="ویبره هشدار فعال باشد" android:layout_marginTop="12dp"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تعداد تکرار هشدار" android:layout_marginTop="14dp"/>
+<Spinner android:id="@+id/repeatCount" android:layout_width="match_parent" android:layout_height="wrap_content"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="فاصله تکرار (دقیقه)" android:layout_marginTop="12dp"/>
+<EditText android:id="@+id/interval" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="number" android:text="5"/>
+<TextView android:id="@+id/soundText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp"/>
+<Button android:id="@+id/soundButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="انتخاب صدای اختصاصی"/>
+<Button android:id="@+id/saveButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="ذخیره تنظیمات"/>
+<Button android:id="@+id/testButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تست صدا و ویبره"/>
+<Button android:id="@+id/permissionButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="اعطای دسترسی‌ها"/>
+<Button android:id="@+id/channelButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="تنظیمات اعلان در اندروید"/>
+<TextView android:id="@+id/status" android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="16dp" android:gravity="center"/>
+<TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:paddingTop="20dp"
+ android:text="این برنامه SMS پیش‌فرض گوشی را تغییر نمی‌دهد و اعلان برنامه پیامک شما را حذف یا دستکاری نمی‌کند. فقط برای پیام‌های مطابق کلمات کلیدی، هشدار مستقل ایجاد می‌کند."/>
+</LinearLayout></ScrollView>

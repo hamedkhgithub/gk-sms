@@ -1,0 +1,3 @@
+<resources><style name="Theme.GeniusKala" parent="Theme.MaterialComponents.DayNight.NoActionBar">
+<item name="android:fontFamily">sans</item><item name="android:windowLightStatusBar">true</item>
+</style></resources>
