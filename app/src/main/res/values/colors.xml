@@ -1,0 +1,7 @@
+<resources>
+ <color name="primary">#1769FF</color><color name="primary_dark">#0F4ED8</color>
+ <color name="bg">#F7F9FD</color><color name="surface">#FFFFFF</color>
+ <color name="soft_blue">#EEF4FF</color><color name="text">#111827</color>
+ <color name="muted">#64748B</color><color name="green">#16A34A</color>
+ <color name="danger">#EF4444</color><color name="yellow">#FFC83D</color>
+</resources>

@@ -1,0 +1,14 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/bg">
+ <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp" android:layoutDirection="rtl">
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="کلمات کلیدی" android:textSize="24sp" android:textStyle="bold" android:textColor="@color/text" android:gravity="center"/>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:background="@drawable/card_blue" android:orientation="vertical">
+   <Switch android:id="@+id/enabled" android:layout_width="match_parent" android:layout_height="60dp" android:text="🔎  فعال‌سازی فیلتر کلمات کلیدی"/>
+  </LinearLayout>
+  <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:orientation="horizontal">
+   <Button android:id="@+id/addButton" android:layout_width="56dp" android:layout_height="56dp" android:text="+"/>
+   <EditText android:id="@+id/newKeyword" android:layout_width="0dp" android:layout_height="56dp" android:layout_weight="1" android:layout_marginStart="8dp" android:background="@drawable/input_bg" android:hint="افزودن کلمه کلیدی جدید" android:padding="14dp"/>
+  </LinearLayout>
+  <LinearLayout android:id="@+id/list" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:background="@drawable/card_white" android:orientation="vertical"/>
+  <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:layout_marginBottom="24dp" android:background="@drawable/card_blue" android:padding="16dp" android:text="ⓘ اگر متن پیامک شامل هر یک از این کلمات باشد، هشدار اختصاصی دریافت خواهید کرد." android:textColor="@color/muted"/>
+ </LinearLayout>
+</ScrollView>
